@@ -78,7 +78,7 @@ export async function NamiWalletApi(NamiWalletObject: any, blockfrostApiKey: str
     
     const Buffer = (await import('buffer')).Buffer
     const Nami = NamiWalletObject
-    const fetch = (await import('node-fetch')).default || window.fetch
+    const fetch = window.fetch
     
     const CoinSelection = (await import('./coinSelection')).default
 
